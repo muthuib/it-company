@@ -138,7 +138,7 @@ h6,
 
 .sticky-top.navbar-dark .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark);
+    color: var(--light);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -210,7 +210,7 @@ h6,
     }
 
     .sticky-top.navbar-dark .navbar-brand h1 {
-        color: var(--primary);
+        color: var(--light);
     }
 }
 
@@ -221,7 +221,7 @@ h6,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(56, 78, 99, 0.678);
+    /* background: rgba(56, 78, 99, 0.678); */
     z-index: 1;
 }
 
@@ -489,4 +489,44 @@ h6,
     .footer-about {
         margin-bottom: -75px;
     }
+}
+
+/* background video styling */
+/* Container for the video and content */
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background video styling */
+#background-video {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+/* Content styling */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5em;
 }
