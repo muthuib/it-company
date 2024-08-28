@@ -24,7 +24,7 @@ To get started with any of our services or to explore our projects, follow these
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/IT-company.git
+   git clone https://github.com/muthuib/it-company.git
 2. **How to Contribute**
 We welcome contributions from the community! If you’d like to contribute to one of our projects, please follow these steps:
 
