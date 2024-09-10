@@ -293,4 +293,133 @@
 <script src="js/main.js"></script>
 </body>
 
+<style>
+    /* ensures mobile responsiveness in small */
+    /* Default header size for larger devices */
+    .responsive-header {
+        font-size: 2.3em;
+    }
+
+    /* Adjust header size for tablets and smaller screens */
+    @media (max-width: 768px) {
+        .responsive-header {
+            font-size: 1.8em;
+        }
+    }
+
+    /* Adjust header size for mobile devices */
+    @media (max-width: 576px) {
+        .responsive-header {
+            font-size: 1.5em;
+        }
+    }
+
+    /* Further reduce for very small mobile devices */
+    @media (max-width: 375px) {
+        .responsive-header {
+            font-size: 1.3em;
+        }
+    }
+
+    /* Default background color for the navbar collapse */
+    .navbar-collapse {
+        background-color: transparent;
+        /* Default (transparent for larger devices) */
+    }
+
+    /* Background color white for small devices */
+    @media (max-width: 991.98px) {
+        .navbar-collapse {
+            background-color: #fff;
+            /* White background on small devices */
+            padding: 1rem;
+        }
+    }
+
+    /* Set text color for links inside the navbar */
+    .navbar-collapse .nav-link {
+        color: #fff;
+        /* Default white text color for larger screens */
+    }
+
+    /* Adjust text color for small screens */
+    @media (max-width: 991.98px) {
+        .navbar-collapse .nav-link {
+            color: #091e3e;
+            /* Dark text color for small screens (white background) */
+        }
+    }
+
+    /* Optional: Adjust link hover effect for consistency */
+    .navbar-collapse .nav-link:hover {
+        color: #0056b3;
+    }
+
+    /* White dropdown menu background in all sizes */
+    .dropdown-menu {
+        background-color: #fff;
+    }
+
+    .dropdown-item {
+        color: #091e3e;
+    }
+
+    .dropdown-item:hover {
+        background-color: #f8f9fa;
+    }
+
+    /* Optional: Set toggler button border color */
+    .navbar-toggler {
+        border-color: #fff;
+    }
+
+    /* make dropdown menu in small devices clickable */
+    /* Ensure the navbar collapse is at a high z-index */
+    .navbar-collapse {
+        z-index: 9999;
+        /* High z-index to ensure it's clickable */
+        background-color: transparent;
+        /* Default for large devices */
+    }
+
+    /* Background color for small screens */
+    @media (max-width: 991.98px) {
+        .navbar-collapse {
+            background-color: #fff;
+            /* White background on small screens */
+        }
+    }
+
+    /* Dropdown Menu Style */
+    .dropdown-menu {
+        z-index: 9999;
+        /* Ensure dropdown stays above other content */
+        background-color: #fff;
+        /* White background */
+        position: absolute;
+        /* Ensures proper dropdown positioning */
+    }
+
+    .dropdown-item {
+        color: #091e3e;
+        /* Text color */
+    }
+
+    .dropdown-item:hover {
+        background-color: #f8f9fa;
+    }
+
+    /* Fix toggle button on small devices */
+    .navbar-toggler {
+        z-index: 9999;
+    }
+
+    /* Link colors for small screens */
+    @media (max-width: 991.98px) {
+        .navbar-collapse .nav-link {
+            color: #091e3e;
+            /* Dark text for small screens */
+        }
+    }
+</style>
 </html>
